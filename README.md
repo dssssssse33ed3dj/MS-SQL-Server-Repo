@@ -1,4 +1,4 @@
-<img width="867" height="249" alt="image" src="https://github.com/user-attachments/assets/a3354391-7d0b-484e-aa44-b8f3b98d23aa" /><img width="867" height="249" alt="image" src="https://github.com/user-attachments/assets/ad45c3d4-90b1-4cf5-9dd7-82d6a7d9931d" /><img width="1802" height="123" alt="image" src="https://github.com/user-attachments/assets/67d9bf58-3ca3-4844-a7f0-af0cfb975ebd" /># 📚 Конспект по предмету MS SQL Server
+📚 Конспект по предмету MS SQL Server
 
 ---
 
@@ -366,43 +366,65 @@ print ' @y1 = ' + CAST(@y1 as varchar(20)) +
 
 
 
----
-
-### 🔹 Пара 5 (11.09)
+### 🔹 Практическая работа 1-я пара, НЕ КОНСПЕКТ (за 11.09)
 
 ---
 
-Структура таблиц:
-<img width="297" height="272" alt="Снимок экрана 2026-09-11 123645" src="https://github.com/user-attachments/assets/37162955-5799-42b6-9143-73321565760d" />
+## Структура таблиц
 
-В начале пары мы создали таблицы AUDITORIUM, AUDITORIUM TYPE, SCHEDULE_TEACHER И TEACHER и посмотрели их СТРУКТУРУ с помощью команды ниже. Пример с таблицей AUDITORIUM: <img width="1067" height="1037" alt="Снимок экdsfdfdfрана 2026-09-11 123922" src="https://github.com/user-attachments/assets/b176d3d9-8807-4508-b0b1-baba718c4f47" />
+<img src="https://github.com/user-attachments/assets/37162955-5799-42b6-9143-73321565760d" alt="Снимок экрана 2026-09-11 123645" width="500"/>
 
-Далее, мы с помощью команды ниже мы удаялем прошлую таблицу TEACHER (неверно создал ее) и создаём новую:
-<img width="695" height="421" alt="Сниваввввввввмок экрана 2026-09-11 124012" src="https://github.com/user-attachments/assets/943db3f9-e6da-4bf4-825a-026bd7ca3fab" />
+В начале пары мы создали таблицы `AUDITORIUM`, `AUDITORIUM TYPE`, `SCHEDULE_TEACHER` и `TEACHER` и посмотрели их **структуру** с помощью команды ниже.
 
-Первоначальная структура таблицы TEACHER:
-<img width="993" height="522" alt="dsdsdsэкрана 2026-09-11 124154" src="https://github.com/user-attachments/assets/6f5238b9-ecb9-4797-840b-aec60dc373e0" />
+Пример с таблицей `AUDITORIUM`:
 
-Заполнение таблицы данными и вывод информации для примера работы:
-<img width="918" height="1166" alt="34343434вававава2026-09-11 124946" src="https://github.com/user-attachments/assets/67dc24ce-9572-43ac-a431-256799842aef" />
+<img src="https://github.com/user-attachments/assets/b176d3d9-8807-4508-b0b1-baba718c4f47" alt="Снимок экрана 2026-09-11 123922" width="500"/>
 
-Изменение структуры: добавляем столбец с датой рождения 
-<img width="1230" height="762" alt="СнЫВВВЫВЫимок экрана 2026-09-11 125142" src="https://github.com/user-attachments/assets/2c4b7437-94a4-4de4-b6f0-e91c6dd2ca3b" />
+Далее мы с помощью команды ниже удаляем прошлую таблицу `TEACHER` (неверно создал её) и создаём новую:
 
-Вывод последний с обновленным столбцом дата рождения:
-<img width="906" height="1152" alt="uyuyuyuyuyuyэкрана 2026-09-11 125305" src="https://github.com/user-attachments/assets/fd64755d-d8c0-455d-a3e4-10a764705f2f" />
+<img src="https://github.com/user-attachments/assets/943db3f9-e6da-4bf4-825a-026bd7ca3fab" alt="Снимок экрана 2026-09-11 124012" width="500"/>
 
+### Первоначальная структура таблицы `TEACHER`
 
+<img src="https://github.com/user-attachments/assets/6f5238b9-ecb9-4797-840b-aec60dc373e0" alt="Снимок экрана 2026-09-11 124154" width="500"/>
 
+### Заполнение таблицы данными и вывод информации для примера работы
 
+<img src="https://github.com/user-attachments/assets/67dc24ce-9572-43ac-a431-256799842aef" alt="Снимок экрана 2026-09-11 124946" width="500"/>
 
+### Изменение структуры: добавляем столбец с датой рождения
 
+<img src="https://github.com/user-attachments/assets/2c4b7437-94a4-4de4-b6f0-e91c6dd2ca3b" alt="Снимок экрана 2026-09-11 125142" width="500"/>
 
+### Вывод последний с обновлённым столбцом дата рождения
 
+<img src="https://github.com/user-attachments/assets/fd64755d-d8c0-455d-a3e4-10a764705f2f" alt="Снимок экрана 2026-09-11 125305" width="500"/>
 
+---
 
+### 🔹 Практическая работа 2-я пара, НЕ КОНСПЕКТ (за 11.09)
 
+---
 
+Тут мы перешли к T-SQL. Суть, чтобы написать запустить два скрипта, которые собирают статистику по БД BSTU.
+
+Также, чтобы не было ошибок, я создал таблицу `SUBJECT` и заполнил её данными и также таблицу `STUDENT`.
+
+### Вот вывод структуры её:
+
+<img src="https://github.com/user-attachments/assets/6b25a3c7-0510-4987-864c-d82a8d8bfdb9" alt="писькаэкрана 2026-09-11 134834" width="500"/>
+
+На слайде 8 с помощью группировки `GROUP BY` распределил и посчитал количество аудиторий по типам и дисциплин по кафедрам, а затем через `PRINT` и `CAST` вывел во вкладку красивый отчёт с общим числом студентов, аудиторий и преподавателей в БД.
+
+<img src="https://github.com/user-attachments/assets/8330b28a-66ed-4f9f-a9cd-db8144f35b61" alt="Снимок экрана 2026-09-11 135015" width="500"/>
+
+На слайде 14 программа проверяет вместимость аудиторий, и если мест больше 200, рассчитывает их средний размер и точный процент самых больших кабинетов.
+
+<img src="https://github.com/user-attachments/assets/556ba3e9-9cc3-4e6d-aab1-ed169fdb12b2" alt="Снимок экрана 2026-09-11 135609" width="500"/>
+
+На слайде такой же 29 код с 28-го, но упрощённый и компактный, я решил его переписать только. Суть, что программа проверяет суммарную вместимость кабинетов и с помощью одного запроса и вычисляет, и выводит процент аудиторий, размер которых превышает среднее значение по академии.
+
+<img src="https://github.com/user-attachments/assets/a426de1e-b0fa-4ac2-a63d-32e36fb8d330" alt="Снимок экрана" width="500"/>
 
 
 
