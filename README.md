@@ -366,9 +366,31 @@ print ' @y1 = ' + CAST(@y1 as varchar(20)) +
 
 
 
+---
 
+### 🔹 Пара 5 (11.09)
 
+---
 
+Структура таблиц:
+<img width="297" height="272" alt="Снимок экрана 2026-09-11 123645" src="https://github.com/user-attachments/assets/37162955-5799-42b6-9143-73321565760d" />
+
+В начале пары мы создали таблицы AUDITORIUM, AUDITORIUM TYPE, SCHEDULE_TEACHER И TEACHER и посмотрели их СТРУКТУРУ с помощью команды ниже. Пример с таблицей AUDITORIUM: <img width="1067" height="1037" alt="Снимок экdsfdfdfрана 2026-09-11 123922" src="https://github.com/user-attachments/assets/b176d3d9-8807-4508-b0b1-baba718c4f47" />
+
+Далее, мы с помощью команды ниже мы удаялем прошлую таблицу TEACHER (неверно создал ее) и создаём новую:
+<img width="695" height="421" alt="Сниваввввввввмок экрана 2026-09-11 124012" src="https://github.com/user-attachments/assets/943db3f9-e6da-4bf4-825a-026bd7ca3fab" />
+
+Первоначальная структура таблицы TEACHER:
+<img width="993" height="522" alt="dsdsdsэкрана 2026-09-11 124154" src="https://github.com/user-attachments/assets/6f5238b9-ecb9-4797-840b-aec60dc373e0" />
+
+Заполнение таблицы данными и вывод информации для примера работы:
+<img width="918" height="1166" alt="34343434вававава2026-09-11 124946" src="https://github.com/user-attachments/assets/67dc24ce-9572-43ac-a431-256799842aef" />
+
+Изменение структуры: добавляем столбец с датой рождения 
+<img width="1230" height="762" alt="СнЫВВВЫВЫимок экрана 2026-09-11 125142" src="https://github.com/user-attachments/assets/2c4b7437-94a4-4de4-b6f0-e91c6dd2ca3b" />
+
+Вывод последний с обновленным столбцом дата рождения:
+<img width="906" height="1152" alt="uyuyuyuyuyuyэкрана 2026-09-11 125305" src="https://github.com/user-attachments/assets/fd64755d-d8c0-455d-a3e4-10a764705f2f" />
 
 
 
