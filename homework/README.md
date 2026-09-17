@@ -1,4 +1,4 @@
-
+<img width="862" height="607" alt="АВВААВВАэкрана 2026-09-17 175114" src="https://github.com/user-attachments/assets/c1274359-1840-4932-8d86-77ed8f5c4dcc" />
 ### 🔹 Практическая работа 1-я пара, НЕ КОНСПЕКТ (за 11.09)
 
 ---
@@ -81,14 +81,15 @@
 
 #### 1. Функция, которая выбирает топ-20 преподавателей мужчин из таблицы TEACHER
 
-<img width="762" height="937" alt="dsdsdddsdsэкрана 2026-09-17 174755" src="https://github.com" />
+<img width="762" height="937" alt="dsdsdddsdsэкрана 2026-09-17 174755" src="https://github.com/user-attachments/assets/442905f3-0c76-414e-8565-3e7ba20f7445" />
 
 ---
 
 #### 2. Процедура, которая считает разницу между поступившими и выпустившимися студентами
 
-<img width="862" height="607" alt="АВВААВВАэкрана 2026-09-17 175114" src="https://github.com" />
+<img width="862" height="607" alt="АВВААВВАэкрана 2026-09-17 175114" src="https://github.com/user-attachments/assets/c7c1a693-995d-434b-9a84-b9492c56aabe" />
 
+---
 
 
 
