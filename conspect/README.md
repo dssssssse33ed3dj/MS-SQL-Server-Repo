@@ -443,6 +443,7 @@ AS выражение_SELECT
 Использовать группировку и/или несколько фильтров
 Сортировка
 <img width="967" height="756" alt="d d ddddddddddddddddddddddddddddэкрана 2026-09-23 204712" src="https://github.com/user-attachments/assets/a20fe35c-7e7f-4ca1-826a-cc3ef2610332" />
+<img width="842" height="708" alt="Снимок экрана ццу-09-30 201215" src="https://github.com/user-attachments/assets/20ebc650-c78d-4d54-85f8-1f249ee0ddbc" />
 
 -- Определить какое из этих представлений - модифицируемое и объяснить почему.
 Являются Someorders и Londoncust:<img width="613" height="292" alt="PREDDD  экрана 2026-09-23 204944" src="https://github.com/user-attachments/assets/b7a21018-f969-41db-b629-edfcf12e0e60" />
@@ -455,6 +456,7 @@ AS выражение_SELECT
 Группировка GROUP BY схлопывает исходные строки, превращая группу записей в одну строку, из-за чего теряются  детали сотрудников или товаров, а VIEW становится немодифицируемым. В отличие от неё, оконная группировка PARTITION BY сохраняет структуру таблицы без изменений, рассчитывая итоги отдельно для каждого блока данных и выводя их новой колонкой напротив каждой детальной строки, что позволяет видеть и частные данные (например, имя и зарплату), и общие показатели группы (средний балл или сумму отдела) в рамках 1 запроса.
 
 Пример для GitHub:<img width="761" height="662" alt="Снимок 34939191999999999999999999992026-09-23 210421" src="https://github.com/user-attachments/assets/a60a9ad1-69e0-46b8-a31e-e64e643ae994" />
+<img width="562" height="790" alt="dssssssss" src="https://github.com/user-attachments/assets/30b6bbde-dda3-4de9-83b2-b0404a0b6379" />
 
 
 ---
@@ -663,7 +665,9 @@ condition_name – имя условия, которое объявляется 
 - TRY...CATCH — перехватывает ошибки внутри кода, чтобы сервер не «падал» при сбоях.
 
 Пример: 
-<img width="932" height="431" alt="DDSDSDSDSDSDSэкрана 2026-09-28 121555" src="https://github.com/user-attachments/assets/3b5e1736-1cf5-4d55-baf9-d875ff640e59" />
+<img width="932" height="431" alt="DDSDSDSDSDSDSэкрана 2026-09-28 121555" src="https://github.com/user-attachments/assets/3b5e1736-1cf5-4d55-baf9-d875ff640e59" /> 3
+<img width="827" height="676" alt="ВЫВЫВЫВЫВЫВЫВЫВЫэкрана 2026-09-30 202216" src="https://github.com/user-attachments/assets/8b1077c8-03ca-4c5c-a198-bbe767a5c319" />
+
 
 ---
 **Команды по управлению триггерами:**
