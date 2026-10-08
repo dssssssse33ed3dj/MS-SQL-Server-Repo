@@ -1,7 +1,6 @@
-
+---
 1
 <img width="1529" height="863" alt="1" src="https://github.com/user-attachments/assets/5589601c-cc99-4b36-8b49-11767590f64e" />
-
 
 
 
@@ -17,3 +16,11 @@
 
 4
 <img width="932" height="740" alt="2" src="https://github.com/user-attachments/assets/e9ee9fc2-4488-45bd-ab62-2940ae6e1d5f" />
+
+
+---
+
+новые скриншоты из нового sql 22 года (ИЗ ПРЕЗЕНТАЦИИ "восстановление")
+
+
+
