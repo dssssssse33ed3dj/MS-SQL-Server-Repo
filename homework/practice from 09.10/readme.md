@@ -10,13 +10,13 @@
  
 Тогда я создал пользователя JohnDoe на уровне Windows через командную строку с правами администратора и уже после этого в SSMS скрипт я написал, который привязал сущность БД QueryStoreDemo к созданному логину
 
-<img width="2598" height="1438" alt="55555555555555" src="https://github.com/user-attachments/assets/6a788340-9c01-4537-87c3-d46fde230a6c" />
+- <img width="2598" height="1438" alt="55555555555555" src="https://github.com/user-attachments/assets/6a788340-9c01-4537-87c3-d46fde230a6c" />
 
 
 **Задание 3. Создание пользователя без логина**
 Создайте пользователя AppServiceUser без логина (WITHOUT LOGIN) в базе данных TestDB. Объясните, для чего может использоваться такой пользователь и какие ограничения он имеет.
 
-<img width="1222" height="957" alt="pol" src="https://github.com/user-attachments/assets/4e708415-e9da-4825-9dd2-ae5751eebd5e" />
+- <img width="1222" height="957" alt="pol" src="https://github.com/user-attachments/assets/4e708415-e9da-4825-9dd2-ae5751eebd5e" />
 
 Он нужен для изоляции безопасности внутри конкретной базы данных. Для запуска кода от имени этого пользователя через команду EXECUTE AS, но под этим пользователем физически нельзя подключиться к серверу через окно входа - у него нет пароля и доступа к серверным ресурсам, он существует только внутри QueryStoreDemo.
 
@@ -32,17 +32,17 @@
 
 **Задание 5. Просмотр списка всех логинов и пользователей**
 Напишите запрос, который выведет список всех SQL-логинов на сервере, дату их создания и признак отключённости (is_disabled). Затем напишите запрос для вывода всех пользователей в текущей базе данных.
-<img width="2558" height="1438" alt="877" src="https://github.com/user-attachments/assets/7ab64dd6-422b-45c1-b48c-767cc811035f" />
+- <img width="2558" height="1438" alt="877" src="https://github.com/user-attachments/assets/7ab64dd6-422b-45c1-b48c-767cc811035f" />
 
 
 
 **Задание 6. Добавление логина в фиксированную серверную роль**
 Добавьте логин TestUser01 в серверную роль securityadmin. Проверьте членство. Какие права даёт эта роль?
 
-<img width="1137" height="1023" alt="4444444444" src="https://github.com/user-attachments/assets/08ce8a2a-8ac6-4ec4-8d55-fe1d6e973490" />
+- <img width="1137" height="1023" alt="4444444444" src="https://github.com/user-attachments/assets/08ce8a2a-8ac6-4ec4-8d55-fe1d6e973490" />
 
 
-<img width="1048" height="717" alt="drdffffffffffffffff" src="https://github.com/user-attachments/assets/8d77a1ce-73c8-4e7f-8140-11a6bea59104" />
+- <img width="1048" height="717" alt="drdffffffffffffffff" src="https://github.com/user-attachments/assets/8d77a1ce-73c8-4e7f-8140-11a6bea59104" />
 
 Участники роли securityadmin могут полностью управлять учетными записями сервера: создавать и удалять SQL-логины, сбрасывать и менять пароли, управлять разрешениями (GRANT, DENY, REVOKE) на уровне всего сервера. sysadmin = securityadmin
 
@@ -51,29 +51,29 @@
 Создайте серверную роль CustomServerRole. Предоставьте ей право ALTER ANY LOGIN. Добавьте в неё логин TestUser01. Проверьте, может ли этот логин теперь создавать других логинов.
 
 Да, этот логин теперь может создавать других логинов, так как право ALTER ANY LOGIN (изменение любого имени для входа) дает право управлять всем их жизненным циклом учётных записей: создавать новые логины при помощи команды CREATE LOGIN и полностью удалять старые через DROP LOGIN.
-<img width="951" height="722" alt="909090909090909090909090909090" src="https://github.com/user-attachments/assets/470994cf-e5fa-41dc-ab7d-1ebc321e9e45" />
+- <img width="951" height="722" alt="909090909090909090909090909090" src="https://github.com/user-attachments/assets/470994cf-e5fa-41dc-ab7d-1ebc321e9e45" />
 
 
 **Задание 8. Проверка членства в серверных ролях**
 Напишите запрос, который для указанного логина выведет все серверные роли, в которых он состоит (включая фиксированные и пользовательские).
 
-<img width="835" height="697" alt="999999999999999999990000000000000000000000000000000000000" src="https://github.com/user-attachments/assets/bd737836-2a59-4fd8-ac24-84ea44e959cf" />
+- <img width="835" height="697" alt="999999999999999999990000000000000000000000000000000000000" src="https://github.com/user-attachments/assets/bd737836-2a59-4fd8-ac24-84ea44e959cf" />
 
 
 **Задание 9. Удаление логина из роли и удаление пользовательской роли**
 Удалите TestUser01 из роли securityadmin. Затем удалите пользовательскую роль CustomServerRole. Какие условия должны быть выполнены перед удалением роли?
 
-<img width="1013" height="787" alt="1" src="https://github.com/user-attachments/assets/fafceb70-76a4-4b08-990f-8648f2c27c2f" />
+- <img width="1013" height="787" alt="1" src="https://github.com/user-attachments/assets/fafceb70-76a4-4b08-990f-8648f2c27c2f" />
 
 Перед удалением роли она должна быть пустой, поэтому из неё необходимо исключить всех участников до этого. Также у роли не должно быть объектов или прав владения другими сущностями на сервере, иначе система заблокирует команду
 
 
 **Задание 10. Добавление пользователя в фиксированную роль базы данных**
 Добавьте пользователя JohnDoe в роль db_datareader в базе данных AdventureWorks2025. Проверьте, что он может выполнять SELECT из таблиц, но не может выполнять INSERT или UPDATE.
-<img width="1372" height="781" alt="454545454545454545454545454545454545" src="https://github.com/user-attachments/assets/8a1a2d1a-b95a-4e5d-9ff2-98ed1f82487e" />
+- <img width="1372" height="781" alt="454545454545454545454545454545454545" src="https://github.com/user-attachments/assets/8a1a2d1a-b95a-4e5d-9ff2-98ed1f82487e" />
 
 Проверка прав (роль db_datareader даёт JohnDoe полные права на чтение данных, но 229 при выполнении INSERT видно, что эта роль запрещает любые операции изменения или добавления записей):
-<img width="897" height="887" alt="433333333333333333333" src="https://github.com/user-attachments/assets/0337d09c-a30a-4d98-b8c3-cfab2d8fe183" />
+- <img width="897" height="887" alt="433333333333333333333" src="https://github.com/user-attachments/assets/0337d09c-a30a-4d98-b8c3-cfab2d8fe183" />
 
 
 **Задание 11. Создание пользовательской роли с точечными правами**
@@ -88,12 +88,16 @@
 
 **Задание 12. Запрет (DENY) на уровне объекта**
 Создайте пользователя RestrictedUser. Предоставьте ему право SELECT на всю схему Sales через GRANT SELECT ON SCHEMA::Sales. Затем явно запретите (DENY) SELECT на таблицу Sales.CreditCard. Проверьте, что запрет работает.
-<img width="766" height="966" alt="555555511111111111111111111111" src="https://github.com/user-attachments/assets/de85fb7b-66c2-4562-8de0-4087f20e4dec" />
+- <img width="766" height="966" alt="555555511111111111111111111111" src="https://github.com/user-attachments/assets/de85fb7b-66c2-4562-8de0-4087f20e4dec" />
 
 
 **Задание 13. Права на выполнение хранимых процедур**
 Предоставьте пользователю AppServiceUser право EXECUTE на конкретную хранимую процедуру dbo.uspGetEmployeeManagers. Проверьте, что он не может выполнять другие процедуры
 
+- <img width="1455" height="1372" alt="вавававававававававававававававава" src="https://github.com/user-attachments/assets/f503acd6-7270-478b-a9c3-dd942af29edf" />
+
+Проверка:
+- <img width="962" height="772" alt="ва)" src="https://github.com/user-attachments/assets/12330546-d165-4616-90a3-12477406bf64" />
 
 
 
